@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>快快樂樂廚房</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            .slider_container {
+              margin: 30px auto;
+              width: 1000px;
+              height: 300px;
+              overflow: hidden;
+              position: relative;
+            }
+            .slider_container:before {
+              content: '';
+              display: block;
+              position: absolute;
+              top: 0;
+              left: -100%;
+              opacity: 1;
+              filter: alpha(opacity=100);
+              width: 100%;
+              height: 100%;
+              background-image: url(https://img.onl/Wrqdga);
+              animation: bk 25s linear;
+            }
+            .slider_container div {
+              position: absolute;
+              top: 0;
+              left: 0;    
+              opacity: 1;   
+              filter: alpha(opacity=100);
+              left: 100%;
+              width: 100%;
+              -webkit-animation: round 25s linear infinite;
+              animation: round 25s linear infinite;
+            }
+            .slider_container div img {
+              width: 100%;
+            }
+            @-webkit-keyframes round {
+              4% {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                left: 0;
+                /* 0 - 1秒 滑入*/
+              }
+              20% {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                left: 0;
+                /* 1- 5秒靜止*/
+              }
+              24% {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                left: -100%;
+                /* 5-6秒滑出*/
+              }
+              26% {
+                opacity: 0;
+                filter: alpha(opacity=0);
+                left: -100%;
+                /* 6-6.5秒變透明*/
+              } 
+              28% {
+                opacity: 0;
+                filter: alpha(opacity=0);
+                left: 100%;
+                /* 6.5-7秒回到起始位置*/
+              } 
+            }
+            @keyframes bk {
+              0% {
+                left: 0;
+                /* 初始位置*/
+              }
+              4% {
+                left: -100%;
+                /* 0 - 1秒 滑出*/
+              }   
+            }
+
+            @keyframes bk {
+              0% {
+                left: 0;
+                /* 初始位置*/
+              }
+              4% {
+                left: -100%;
+                /* 0 - 1秒 滑出*/
+              }  
+            }
+            .slider_container div:nth-child(5) {
+              -webkit-animation-delay: 0s;
+              animation-delay: 0s;
+            }
+            .slider_container div:nth-child(4) {
+              -webkit-animation-delay: 5s;
+              animation-delay: 5s;
+            }
+            .slider_container div:nth-child(3) {
+              -webkit-animation-delay: 10s;
+              animation-delay: 10s;
+            }
+            .slider_container div:nth-child(2) {
+              -webkit-animation-delay: 15s;
+              animation-delay: 15s;
+            }
+            .slider_container div:nth-child(1) {
+              -webkit-animation-delay: 20s;
+              animation-delay: 20s;
+            }
+            .rwd_slider_container_wrapper {
+              margin: 30px auto !important;
+              width: 1450px;
+              height: 600px;    
+            }
+            .rwd_slider_container {
+              position: relative;
+              display: block;
+              height: 0;
+              padding: 0;
+              overflow: hidden;
+              padding-bottom: 70%;
+              box-sizing: border-box;
+            }
+            .rwd_slider_container .slider_container {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              margin: 0;
+              box-sizing: border-box;
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="Home.html" class="logo"><strong>Happy</strong> <span>Home</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="Home.html">home</a></li>
+                            <li><a href="American.html">美式</a></li>
+							<li><a href="Yee%20real.html">歐式</a></li>
+							<li><a href="Chinese%20real.html">中式</a></li>
+							<li><a href="elements.html">英式</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1 style="text-align:center;">Happy Forever Kitchen!</h1>
+							</header>
+						</div>
+					</section>
+                    <div class="rwd_slider_container_wrapper">
+                      <div class="rwd_slider_container">
+                        <div class="slider_container" >
+                          <div>
+                            <img src="images/cheeseburger_20208_760x580jpg.jpg" alt="pure css slider" width="1000" height="500" />
+                          </div>
+                          <div>
+                            <img src="images/fry_chicken.jpg" alt="pure css slider" width="1000" height="500" />
+                          </div>
+                          <div>
+                            <img src="images/steak.jpg" alt="pure css slider" width="1000" height="500" />
+                          </div>
+                          <div>
+                            <img src="https://attach.setn.com/newsimages/2019/08/09/2064672-XXL.jpg" alt="pure css slider" width="1000" height="500" />
+                          </div>
+                          <div>
+                            <img src="https://img.ltn.com.tw/Upload/food/page/2021/11/03/211103-11580-0-l16Jw.jpg" alt="pure css slider" width="1000" height="500" />
+                          </div>
+                        </div><!-- end of .pure_slider_container -->
+                      </div><!-- end of .embed-responsive -->
+                    </div><!-- end of .embed-responsive-box -->
+                    <section id="banner" class="major">
+                            <div class="inner">
+                                <header class="major">
+                                    <h1 style="text-align:center;">Category<br /></h1>
+                                </header>
+                                <div class="content">
+                                    <p>此網站使用分類、搜尋等功能，幫助使用者快速找到想要選擇的菜餚。<br />
+                                    並且每個食譜中，都包含詳細的步驟以及成品照片。</p>
+                                    <ul class="actions">
+                                        <li><a href="#one" class="button next scrolly">Get Started</a></li>
+                                    </ul>
+                                </div>
+                            </div>   
+                    </section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one" class="tiles">
+								<article>
+									<span class="image">
+										<img src="images/cheeseburger_20208_760x580jpg.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="American.html" class="link">美式</a></h3>
+										<p>美式炸雞🥠、起士牛肉堡🍔...</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="https://img.ltn.com.tw/Upload/food/page/2021/11/03/211103-11580-0-l16Jw.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="Yee%20real.html" class="link">歐式</a></h3>
+										<p>義大利麵🍝、乳酪硬布丁🍮...</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="https://rs.joo.com.tw/website/uploads_product/website_794/P0079400074152_3_287162.jpg?_5966" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="Chinese%20real.html" class="link">中式</a></h3>
+										<p>火腿蛋餅🥓、牛肉麵🍜...</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E4%BC%8A%E9%BA%97%E8%8E%8E%E7%99%BD%E5%A5%B3%E7%8E%8B-%E5%8F%B8%E5%BA%B7-1587629787.jpg?crop=0.503xw:1.00xh;0,0&resize=640:*" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="British.html" class="link">英式</a></h3>
+										<p>英式炸魚薯條🍟、英式烤布丁🍮...</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="https://1on1.today/blog/wp-content/uploads/2020/09/%E5%A6%82%E4%BD%95-%E7%85%8E%E5%87%BA-%E9%87%91%E9%BB%83%E8%89%B2-%E5%A5%BD%E5%90%83-%E6%B3%95%E5%BC%8F%E5%90%90%E5%8F%B8.png" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="French.html" class="link">法式</a></h3>
+										<p>法國吐司🍞、法式檸檬塔🍋...</p>
+									</header>
+								</article>
+                                <article>
+									<span class="image">
+										<img src="https://www.gomaji.com/blog/wp-content/uploads/2020/09/101630568_715389119217935_7122079825623435434_n-1.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="Japen.html" class="link">日式</a></h3>
+										<p>唐揚雞🐔、日式糰子🍡...</p>
+									</header>
+								</article>
+                                <article>
+									<span class="image">
+										<img src="https://www.unileverfoodsolutions.tw/dam/global-ufs/mcos/na/taiwan/calcmenu/recipes/TW-recipes/general/%E9%9F%93%E5%BC%8F%E6%B3%A1%E8%8F%9C%E9%8D%8B/main-header.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="Korean.html" class="link">韓式</a></h3>
+										<p>海鮮煎餅、韓式泡菜...</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="https://attach.setn.com/newsimages/2019/08/09/2064672-XXL.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="Thai.html" class="link">泰式</a></h3>
+										<p>泰式奶茶、椒麻雞🐓...</p>
+									</header>
+								</article>
+                                
+                                
+							</section>
+                        
+
+						<!-- Two -->
+							<section id="two" class="major">
+								
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+				
+
+				<!-- Footer -->
+					<footer id="footer" class="major">
+						
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
